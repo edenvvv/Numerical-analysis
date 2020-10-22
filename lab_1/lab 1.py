@@ -10,4 +10,4 @@ num5 = int(input("enter the e (in a*(b/c-d)-e): "))
 print(math.fabs(num1*(num2/num3-num4)-num5)-ε)
 
 # 2.1
-print(f"Machine precision is: {sys.float_info.epsilon}")
+print(f"Machine precision is: {ε}")
