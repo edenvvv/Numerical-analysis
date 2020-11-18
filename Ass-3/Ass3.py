@@ -15,7 +15,7 @@ def calc_gauss_zeidl():
     z0 = 0
     count = 1
     error = 0.001
-    print('The Relative Error is 0.00001 \n')
+    print(f'The Relative Error is {error} \n')
     state = True
     while state:
         x1 = funcX(x0, y0, z0)
@@ -42,7 +42,7 @@ def calc_Jacobi():
     z0 = 0
     count = 1
     error = 0.001
-    print('The Relative Error is 0.00001 \n')
+    print(f'The Relative Error is {error} \n')
     state = True
     while state:
         x1 = funcX(x0, y0, z0)
