@@ -5,7 +5,7 @@ def f(x):
 
 # Implementing Bisection Method
 def bisection_method(a, b, e):
-    # add check error
+    # add check error blob
     step = 1
     condition = True
     while condition:
