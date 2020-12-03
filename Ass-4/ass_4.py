@@ -12,7 +12,6 @@ def derivative_of_f(x):
 
 
 def bisection_method(a, b, e, func):
-    # add check error blob
     if func(a) * func(b) > 0.0:
         print('Try Again with different guess values')
     else:
