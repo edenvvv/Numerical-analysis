@@ -36,8 +36,7 @@ def bisection_method(a, b, e, func):
             result.append(m)
 
 
-def max_range(min_range, max_range):
-    segment = 0.1
+def max_range(min_range, max_range, segment):
     segment_list = []
     index = min_range
 
@@ -68,10 +67,11 @@ def max_range(min_range, max_range):
 # main
 a = float(input('First Guess: '))
 b = float(input('Second Guess: '))
+segment = float(input('segment: '))
 result = []
 e = 0.00001
 
-max_range(a, b)
+max_range(a, b, segment)
 print("there roots are:")
 
 for i in result:
