@@ -1,6 +1,6 @@
 # eden dadon id:207279183
 # Eliran Dagan id: 208061580
-import sympy as sp
+from numpy import log as ln
 
 
 def f(x):
@@ -16,8 +16,13 @@ def bisection_method(a, b, e, func):
         print('Try Again with different guess values')
     else:
         step = 1
+        err = 10**-10
+        error_check = -(ln(err / abs(b - a)) / (ln(2)))
         condition = True
         while condition:
+            if step > error_check:
+                print("The function does not match the bisection method")
+                exit(0)
             m = (a + b) / 2
 
             if func(a) * func(m) < 0:
