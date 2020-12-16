@@ -3,7 +3,7 @@
 from scipy import misc
 
 def f(x):
-    return 4*x ** 3 - 48*x + 5
+    return 4*x**3 - 48*x + 5
 
 def newton_method(x0, x1, eps):
     step = 0
